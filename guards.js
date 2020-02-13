@@ -30,3 +30,6 @@ function handle(res) {
         };
     }
 }
+function setAlertType(type) {
+    console.log(type);
+}

@@ -15,7 +15,7 @@ class MyError {
   message = 'error result'
 }
 
-function handle(res: MyResponse | MyError) {
+function handle(res: MyResponse | MyError) { // guards - защита от параметров-объектов !instanceof объявленных классов
   if (res instanceof MyResponse) {
     return {
       info: res.header + res.result
@@ -27,3 +27,8 @@ function handle(res: MyResponse | MyError) {
   }
 }
 
+type AlertType = 'success' | 'danger' | 'warning' | number
+
+function setAlertType(type: AlertType) { // будет принимать только значения из AleryType
+  console.log(type);
+}

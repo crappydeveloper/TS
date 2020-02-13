@@ -25,4 +25,18 @@ var rect4 = {
         return this.size.width * this.size.height;
     }
 };
+var Clock = /** @class */ (function () {
+    function Clock() {
+        this.time = new Date(); // в классе нужно дополнительное определение типов
+    }
+    Clock.prototype.setTime = function (date) {
+        this.time = date;
+    };
+    return Clock;
+}());
+var css = {
+    border: '1px solid black',
+    marginTop: '2px',
+    borderRadius: '5px'
+};
 console.log(rect4.getArea());

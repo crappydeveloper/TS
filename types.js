@@ -27,7 +27,4 @@ function infinite() {
     }
 }
 var login = 'admin'; // использование
-var id1 = 123;
-var id2 = 'Дарова';
-console.log(id1);
-//компиляция - tsc *название файла*
+// компиляция - tsc *название файла*
