@@ -1,4 +1,4 @@
-enum Membership { // по факту создает объект с 6 ключми ('0','1','2', Simple, Standart, Premium);
+enum Membership { // создает объект с 6 ключами ('0','1','2', 'Simple', 'Standart', 'Premium');
     Simple,
     Standard,
     Premium
@@ -7,7 +7,7 @@ enum Membership { // по факту создает объект с 6 ключм
 const membership = Membership.Standard; // 1
 const membershipReversed = Membership[2]; // Premium
 
-enum SocialMedia {
+enum SocialMedia { // можно сказать, простой объект
     VK = 'VKONTAKTE',
     FACEBOOK = 'FACEBOOK',
     INSTAGRAM = 'INSTAGRAM'
